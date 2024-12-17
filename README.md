@@ -1,0 +1,2 @@
+# VS-CODE
+STAJ PROJE
