@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin 0;
+  background-color: #fff;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 400px;
+  margin: auto; /* Ortalamak için */
+  background-color: #000;
+  justify-content: flex-start; /* İçeriği üstte tutar */
+  padding-top: 220px; /* Üst kısma 50px boşluk ekler */
+  border-radius: 30px;
+  overflow: hidden;
+  
+}
+
+.display {
+  padding: 10px;
+  text-align: right;
+  font-size: 4.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1.5fr);
+  margin-left: auto;  /* Sol tarafa otomatik boşluk ekler, sağa kaydırır */
+  gap: 2px;  /* Butonlar arasındaki boşluk */
+}
+
+
+.btn {
+  padding: 23px;
+  font-size: 2.25rem;
+  display: flex; /* Flexbox kullanımı */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%; /* Butonları tamamen yuvarlak yapar */
+  margin: 3px; /* Butonlar arasında boşluk için */
+  border: 0px solid #ccc; /* Buton kenarlığı */
+  height: 82px; /* Butonların yüksekliği */
+  width: 84px; /* Butonların genişliği */
+  transition: 
+}
+
+
+.btn.zero {
+  width: 200px;  /* Genişlik */
+  height: 79px; /* Yükseklik */
+  font-size: 2.25rem; /* Yazı boyutu */
+  padding: 25px;  /* İç boşluk */
+  text-align: left;
+  border-radius: 50px;  /* Köşeleri yuvarlat */
+  display: flex;
+  justify-content: flex-start;  /* Yazıyı sağa hizala */
+  align-items: center;
+}
+
+
+
+
+
+.btn.gray {
+  background-color: #a5a5a5;
+  color: #000;
+}
+
+.btn.orange {
+  background-color: #ff9500;
+}
+
+.btn.zero {
+  grid-column: span 2;
+}
+
+
