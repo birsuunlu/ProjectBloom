@@ -5,10 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hesap Makinesi</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
   <div class="calculator">
     <div class="display" id="display">0</div>
+    <div class="backdrop" id="backdrop"></div>
     <div class="buttons"> 
       
       <button class="btn gray" onclick="clearDisplay()">AC</button>
@@ -20,7 +23,7 @@
       <button class="btn" onclick="appendNumber(8)">8</button>
       <button class="btn" onclick="appendNumber(9)">9</button>
       <button class="btn orange" onclick="setOperator('*')">×</button>
-
+       
       <button class="btn" onclick="appendNumber(4)">4</button>
       <button class="btn" onclick="appendNumber(5)">5</button>
       <button class="btn" onclick="appendNumber(6)">6</button>
@@ -31,9 +34,30 @@
       <button class="btn" onclick="appendNumber(3)">3</button>
       <button class="btn orange" onclick="setOperator('+')">+</button>
 
-      <button class="btn zero" onclick="appendNumber(0)">0</button>
-      <button class="btn" onclick="appendDot()">.</button>
-      <button class="btn orange" onclick="calculateResult()">=</button>
+
+      <button class="btn calculater" onclick="toggleOptions()">|"|</button>
+     
+      <div class="options-box" id="optionsBox">
+      <div class="option-btn" onclick="option1()">(+/-) Temel</div>
+      <div class="option-btn" onclick="option2()">f(x) Bilimsel </div>
+      <div class="option-btn" onclick="option3()">Matematik Notları</div>
+
+
+      <div class="divider"></div>
+
+    <div class="button-container">
+      <button class="custom-button">
+      <i class="fa-solid fa-toggle-off fa-2xl" style="color: #ffffff;"></i>
+      </button>
+      <div class="option-btn1" onclick="option4()">Dönüştür 
+      <!-- </button> -->
+    </div>
+     </div> 
+       </div>
+       <button class="btn zero" onclick="appendNumber(0)">0</button>
+       <button class="btn nkt" onclick="appendDot()">.</button>
+       <button class="btn orange" onclick="calculateResult()">=</button>
+      </div>  
     </div>
   </div>
 

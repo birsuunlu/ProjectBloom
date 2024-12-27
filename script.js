@@ -29,10 +29,17 @@ function toggleSign() {
   updateDisplay();
 }
 
+
+
 function percentage() {
-  currentNumber = (parseFloat(currentNumber) / 100).toString();
+  if (currentNumber === "" || isNaN(parseFloat(currentNumber))) {
+    currentNumber = "0"; 
+  } else {
+    currentNumber = (parseFloat(currentNumber) / 100).toString();
+  }
   updateDisplay();
 }
+
 
 function setOperator(op) {
   if (currentNumber === "") return;
@@ -72,3 +79,36 @@ function calculateResult() {
 function updateDisplay() {
   display.textContent = currentNumber || "0";
 }
+
+
+
+function toggleOptions() {
+  var optionsBox = document.getElementById("optionsBox");
+  var backdrop = document.getElementById("backdrop");
+  
+  if (optionsBox.style.display === "none" || optionsBox.style.display === "") {
+    optionsBox.style.display = "block"; 
+    backdrop.style.display = "block"; 
+    setTimeout(function() {
+      backdrop.style.opacity = 1; 
+    }, 10);
+  } else {
+    optionsBox.style.display = "none"; 
+    backdrop.style.opacity = 0; 
+    setTimeout(function() {
+      backdrop.style.display = "none"; 
+    }, 300); 
+  }
+}
+
+document.getElementById('backdrop').addEventListener('click', function() {
+  var optionsBox = document.getElementById("optionsBox");
+  var backdrop = document.getElementById("backdrop");
+
+  optionsBox.style.display = "none";
+  backdrop.style.opacity = 0;
+  
+  setTimeout(function() {
+    backdrop.style.display = "none";
+  }, 300); 
+});
