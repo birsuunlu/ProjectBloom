@@ -1,0 +1,140 @@
+
+body {
+  display: flex;
+  background-color: #fff;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  width: 400px;
+  margin: auto; 
+  background-color: #000;
+  padding-top: 220px; 
+  border-radius: 30px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.display {
+  padding: 10px;
+  text-align: right;
+  font-size: 4.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.buttons {
+  grid-template-columns: repeat(4, 1.5fr);
+  display: flex;
+  display: grid;
+}
+
+.btn {
+  padding: 23px;
+  font-size: 2.25rem;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%; 
+  margin: 3px; 
+  height: 82px; 
+  width: 84px; 
+}
+
+.btn.gray {
+  background-color: #a5a5a5;
+  color: #000;
+}
+
+.btn.orange {
+  background-color: #ff9500;
+}
+
+.btn:hover {
+  background-color: #696565;
+}
+
+
+.btn.orange:hover
+{
+  background-color: #ffb300;
+}
+
+
+.options-box {
+  display: none; 
+  position: absolute;
+  width: 250px;
+  height: 220px;
+  padding: 10px 20px;
+  background-color: #313131;
+  box-shadow: 0 4px 8px rgba(70, 70, 70, 0.1);
+  z-index: 20; 
+  top: 87%;
+  left: 46.50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  
+}
+
+
+.option-btn {
+  padding: 10px;
+  font-size: 25px;
+  text-align: left;
+  cursor: pointer;
+  background-color: #313131;
+}
+
+
+
+.backdrop {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 10; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.button-container {
+  display: flex; 
+  align-items: center; 
+  gap: 2px; 
+}
+
+
+.custom-button
+{
+  font-size: 18px; 
+  background-color: #313131;
+  color: white;
+  border: none; 
+  cursor: pointer; /* Fareyle üzerine gelince işaretçi değişir*/
+  display: inline-block; /* Butonun satır içinde düzgün görünmesini sağlar */
+  z-index: 150;
+  margin-top: 20px; 
+}
+
+.divider{
+  border-bottom: #000000 1px solid;
+  width: 300px;
+}
+
+.option-btn1
+{
+  font-size: 28px;
+  margin-top: 20px; 
+  padding-left: 10px;
+}
+
+
