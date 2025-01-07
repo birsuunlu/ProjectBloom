@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lange="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Figma Hesap Makinesi</title>
+        <link rel="stylesheet" href="styles2.css">
+
+    </head>
+</body>
+
+
+    <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+
+        <button class="btn1" onclick="clearDisplay()">C</button>
+        <button class="btn1" onclick="toggleSign()">+/-</button>
+        <button class="btn1" onclick="percentage()">%</button>
+        <button class="btn blue" onclick="setOperator('/')">÷</button>
+  
+        <button class="btn" onclick="appendNumber(7)">7</button>
+        <button class="btn" onclick="appendNumber(8)">8</button>
+        <button class="btn" onclick="appendNumber(9)">9</button>
+        <button class="btn blue" onclick="setOperator('*')">×</button>
+         
+        <button class="btn" onclick="appendNumber(4)">4</button>
+        <button class="btn" onclick="appendNumber(5)">5</button>
+        <button class="btn" onclick="appendNumber(6)">6</button>
+        <button class="btn blue" onclick="setOperator('-')">−</button>
+  
+        <button class="btn" onclick="appendNumber(1)">1</button>
+        <button class="btn" onclick="appendNumber(2)">2</button>
+        <button class="btn" onclick="appendNumber(3)">3</button>
+        <button class="btn blue" onclick="setOperator('+')">+</button>
+
+        <button class="btn" onclick="appendDot()">.</button>
+        <button class="btn" onclick="appendNumber(0)">0</button>
+        <div class="button-container"onclick="clearDisplay()"> </button>
+     <button class="icon-btn">
+    <img src="icon.png" />
+
+</div>
+        <button class="btn blue" onclick="calculateResult()">=</button>
+
+     </div>
+   </div>
+ 
+   <script src="java2.js"></script>
+ </body>
+ </html>
+    
