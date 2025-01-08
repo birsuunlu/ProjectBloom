@@ -20,10 +20,6 @@ Welcome to **Project Bloom**, a creative project built using JavaScript, HTML, a
    ```
 3. Open `index.html` in your browser to view the project.
 
-## Contributing
-
-Contributions are welcome! Fork the repo, create a new branch, make your changes, and submit a pull request.
-
 ---
 
 Thank you for checking out Project Bloom! 
